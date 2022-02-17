@@ -1,13 +1,198 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Oswald:wght@500&family=Overpass:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    background: #1D1D1D;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 685.42px;
+    height: 41.6px;
+    margin-left: 120px;
+    margin-top: 62px;
+}
+
+ul, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 101.69px;
+    height: 20px;
+}
+
+.nav__icons a {
+    transition: .6s all;
+}
+
+.nav__icons a:hover {
+    transition: .6s all ease;
+    transform: translateY(-10px);
+    fill: #fff;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    font-family: 'Maven Pro';
+    font-weight: 600;
+    line-height: 30,13px;
+    font-size: 25,64px;
+    font-style: normal;
+}
+
+.nav__list {
+    margin-left: 1.5vh;
+    color: #ffffff;
+}
+
+.nav__list li {
+    font-weight: 500;
+    font-size: 25.6413px;
+    line-height: 30px;
+}
+
+.text__main h1 {
+    font-family: 'Overpass';
+    font-style: normal;
+    color: #D2D2D2;
+    font-size: 48px;
+}
+
+
+.text__sub h3 {
+    margin-top: 1vh;
+    font-family: 'Overpass';
+    font-weight: normal;
+    color: #A9A9A9;
+    font-size: 23px;
+    line-height: 30px;
+}
+
+.text__left {
+    z-index: 99;
+    width: 559px;
+    height: 368px;
+    margin-left: 120px;
+    margin-top: 11%;
+}
+
+.main__btn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    align-items: flex-start;
+}
+
+
+.main__btn a {
+    font-family: 'Overpass';
+    font-size: 24px;
+    background: #27A360;
+    border-radius: 55px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: #fff;
+    padding: 12.5px 50px;
+    transition: .7s all ease;
+    align-items: center;
+}
+
+.main__btn a:hover {
+    color: #1D1D1D;
+}
+
+.b {
+    display: flex;
+    align-items: c;
+    width: 69.5px;
+    height: 0;
+    border: 1px solid #27A360;
+    color: #27A360;
+    margin-left: 14%;
+    margin-top: 1vh;
+    border-radius: .9px;
+}
+
+.blob__l {
+    z-index: 1;
+    position: absolute;
+    left: 55%;
+    top: 15%;
+}
+
+.blobs {
+    z-index: 1;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+}
+
+.rect { 
+    position: absolute;
+    left: 0%;
+    top: 17%;
+    opacity: 0.061;
+}
+
+/* @media (max-width:700px)
+{
+    .nav {
+        margin-top: 75px;
+        margin-left: 10%;
+    }
+
+    .text__left {
+        margin-left: 10%;
+    }
+    .blob__l {
+        left: 20%;
+        top: 40%;
+    }
+
+    .blobs {
+        display: none;
+    }
+} */
+
+@media (max-width:1600px) {
+    .blobs {
+        display: none;
+    }
+}
+
+
+@media (max-width:1000px)
+{
+    .nav {
+        margin-top: 85px;
+        margin-left: 15%;
+    }
+
+    .text__left {
+        margin-top: 30%;
+        margin-left: 15%;
+    }
+    .blob__l {
+        top: 80%;
+        left: 10%;
+        transform: scale(1.5);
+    }
+
+    .blobs {
+        display: none;
+    }
 }
